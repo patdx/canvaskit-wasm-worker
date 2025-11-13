@@ -1,0 +1,14 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "canvaskit-wasm-worker",
+	"main": "src/index.ts",
+	"compatibility_date": "2025-11-11",
+	"compatibility_flags": ["nodejs_compat"],
+	"observability": {
+		"enabled": true,
+		"traces": {
+			"enabled": true,
+		},
+	},
+	"assets": { "directory": "./public/", "binding": "ASSETS" },
+}
